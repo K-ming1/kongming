@@ -23,12 +23,25 @@
      pick     是否编辑精选（小圆点）
   ------------------------------ */
   const SOFTWARE = [
+      {
+      name: "BandZip",
+      mark: "BZ",
+      cat: "系统工具",
+      catKey: "system",
+      tagline: "压缩解压的标准答案：简单、实用、方面",
+      version: "7.47",
+      size: "10.75MB",
+      platform: "Windows",
+      download: "https://www.bandisoft.com/bandizip/",
+      site: "https://www.bandisoft.com/bandizip/",
+      pick: true
+    },
     {
       name: "7-Zip",
       mark: "7z",
       cat: "系统工具",
       catKey: "system",
-      tagline: "压缩解压的标准答案：开源、免费、没有广告。",
+      tagline: "权威的压缩解压软件：开源、免费、没有广告。",
       version: "24.09",
       size: "1.6 MB",
       platform: "Windows",
@@ -48,19 +61,6 @@
       download: "https://www.voidtools.com/downloads/",
       site: "https://www.voidtools.com",
       pick: true
-    },
-    {
-      name: "PowerToys",
-      mark: "PT",
-      cat: "系统工具",
-      catKey: "system",
-      tagline: "微软出品的系统增强合集，二十多个实用模块。",
-      version: "0.87.1",
-      size: "250 MB",
-      platform: "Windows",
-      download: "https://github.com/microsoft/PowerToys/releases",
-      site: "https://learn.microsoft.com/windows/powertoys/",
-      pick: false
     },
     {
       name: "Visual Studio Code",
