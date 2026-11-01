@@ -23,14 +23,14 @@
      pick     是否编辑精选（小圆点）
   ------------------------------ */
   const SOFTWARE = [
-      {
+    {
       name: "BandZip",
       mark: "BZ",
       cat: "系统工具",
       catKey: "system",
-      tagline: "压缩解压的标准答案：简单、实用、方面",
+      tagline: "压缩解压的省心选择，界面简单、上手快。",
       version: "7.47",
-      size: "10.75MB",
+      size: "10.75 MB",
       platform: "Windows",
       download: "https://www.bandisoft.com/bandizip/",
       site: "https://www.bandisoft.com/bandizip/",
@@ -41,7 +41,7 @@
       mark: "7z",
       cat: "系统工具",
       catKey: "system",
-      tagline: "权威的压缩解压软件：开源、免费、没有广告。",
+      tagline: "压缩解压的标准答案：开源、免费、没有广告。",
       version: "24.09",
       size: "1.6 MB",
       platform: "Windows",
@@ -61,6 +61,19 @@
       download: "https://www.voidtools.com/downloads/",
       site: "https://www.voidtools.com",
       pick: true
+    },
+    {
+      name: "PowerToys",
+      mark: "PT",
+      cat: "系统工具",
+      catKey: "system",
+      tagline: "微软出品的系统增强合集，二十多个实用模块。",
+      version: "0.87.1",
+      size: "250 MB",
+      platform: "Windows",
+      download: "https://github.com/microsoft/PowerToys/releases",
+      site: "https://learn.microsoft.com/windows/powertoys/",
+      pick: false
     },
     {
       name: "Visual Studio Code",
@@ -204,6 +217,474 @@
       download: "https://www.snipaste.com/download.html",
       site: "https://www.snipaste.com",
       pick: false
+    },
+    {
+      name: "Photoshop",
+      mark: "Ps",
+      cat: "设计创意",
+      catKey: "design",
+      tagline: "图像处理的行业标准，修图、合成、调色都靠它。",
+      version: "2025",
+      size: "—",
+      platform: "Windows · macOS",
+      download: "https://www.adobe.com/downloads.html",
+      site: "https://www.adobe.com/products/photoshop.html",
+      pick: true
+    },
+    {
+      name: "Premiere Pro",
+      mark: "Pr",
+      cat: "设计创意",
+      catKey: "design",
+      tagline: "视频剪辑主力，和 Adobe 全家桶配合最顺。",
+      version: "2025",
+      size: "—",
+      platform: "Windows · macOS",
+      download: "https://www.adobe.com/downloads.html",
+      site: "https://www.adobe.com/products/premiere.html",
+      pick: false
+    },
+    {
+      name: "After Effects",
+      mark: "Ae",
+      cat: "设计创意",
+      catKey: "design",
+      tagline: "动效与合成的老大哥，模板生态庞大。",
+      version: "2025",
+      size: "—",
+      platform: "Windows · macOS",
+      download: "https://www.adobe.com/downloads.html",
+      site: "https://www.adobe.com/products/aftereffects.html",
+      pick: false
+    },
+    {
+      name: "Illustrator",
+      mark: "Ai",
+      cat: "设计创意",
+      catKey: "design",
+      tagline: "矢量绘图与排版，logo、插画都用它。",
+      version: "2025",
+      size: "—",
+      platform: "Windows · macOS",
+      download: "https://www.adobe.com/downloads.html",
+      site: "https://www.adobe.com/products/illustrator.html",
+      pick: false
+    },
+    {
+      name: "DaVinci Resolve",
+      mark: "DV",
+      cat: "设计创意",
+      catKey: "design",
+      tagline: "剪辑调色一体化，免费版功能就很全。",
+      version: "20",
+      size: "—",
+      platform: "全平台",
+      download: "https://www.blackmagicdesign.com/products/davinciresolve",
+      site: "https://www.blackmagicdesign.com/products/davinciresolve",
+      pick: false
+    },
+    {
+      name: "Studio One",
+      mark: "S1",
+      cat: "影音媒体",
+      catKey: "media",
+      tagline: "音乐制作宿主，录音、编曲、混音一站完成。",
+      version: "7",
+      size: "—",
+      platform: "Windows · macOS",
+      download: "https://www.presonus.com/products/studio-one",
+      site: "https://www.presonus.com/products/studio-one",
+      pick: false
+    },
+    {
+      name: "小红花音效助手",
+      mark: "花",
+      cat: "影音媒体",
+      catKey: "media",
+      tagline: "直播常用的音效播放器，主播人手一个。",
+      version: "最新",
+      size: "—",
+      platform: "Windows",
+      download: "https://yx.xddck.com/",
+      site: "https://yx.xddck.com/",
+      pick: false
+    },
+    {
+      name: "Sunwoo 录屏大师",
+      mark: "Sw",
+      cat: "影音媒体",
+      catKey: "media",
+      tagline: "高帧率录屏，原画质不卡顿。",
+      version: "最新",
+      size: "—",
+      platform: "Windows",
+      download: "https://www.sunwoosoft.com/sunwoo-cap",
+      site: "https://www.sunwoosoft.com/",
+      pick: false
+    },
+    {
+      name: "PotPlayer",
+      mark: "Ptn",
+      cat: "影音媒体",
+      catKey: "media",
+      tagline: "本地播放器，字幕、倍速、截图都顺手。",
+      version: "1.7",
+      size: "—",
+      platform: "Windows",
+      download: "https://potplayer.daum.net/",
+      site: "https://potplayer.daum.net/",
+      pick: false
+    },
+    {
+      name: "CleverPDF",
+      mark: "CP",
+      cat: "效率办公",
+      catKey: "office",
+      tagline: "PDF 转换与处理，浏览器里就能用。",
+      version: "在线",
+      size: "在线",
+      platform: "Web",
+      download: "https://www.cleverpdf.com/cn",
+      site: "https://www.cleverpdf.com/cn",
+      pick: false
+    },
+    {
+      name: "Parsec",
+      mark: "Pc",
+      cat: "效率办公",
+      catKey: "office",
+      tagline: "低延迟远程串流，异地也能流畅打游戏。",
+      version: "最新",
+      size: "—",
+      platform: "全平台",
+      download: "https://parsec.app/",
+      site: "https://parsec.app/",
+      pick: false
+    },
+    {
+      name: "RustDesk",
+      mark: "Rs",
+      cat: "效率办公",
+      catKey: "office",
+      tagline: "开源自建的远程桌面，数据走自己的服务器。",
+      version: "1.3",
+      size: "—",
+      platform: "全平台",
+      download: "https://rustdesk.com/zh/",
+      site: "https://rustdesk.com/zh/",
+      pick: false
+    },
+    {
+      name: "OfficeBox",
+      mark: "OB",
+      cat: "效率办公",
+      catKey: "office",
+      tagline: "Office 安装与组件管理合集。",
+      version: "最新",
+      size: "—",
+      platform: "Windows",
+      download: "https://www.bing.com/search?q=OfficeBox+%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6",
+      site: "https://www.bing.com/search?q=OfficeBox+%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6",
+      pick: false
+    },
+    {
+      name: "IDM",
+      mark: "IDM",
+      cat: "系统工具",
+      catKey: "system",
+      tagline: "多线程下载，浏览器接管一把好手。",
+      version: "6.42",
+      size: "—",
+      platform: "Windows",
+      download: "https://www.internetdownloadmanager.com/",
+      site: "https://www.internetdownloadmanager.com/",
+      pick: false
+    },
+    {
+      name: "Geek Uninstaller",
+      mark: "Geek",
+      cat: "系统工具",
+      catKey: "system",
+      tagline: "卸载残留清理，绿色单文件。",
+      version: "1.5",
+      size: "—",
+      platform: "Windows",
+      download: "https://geekuninstaller.com/",
+      site: "https://geekuninstaller.com/",
+      pick: false
+    },
+    {
+      name: "DirectX 修复工具",
+      mark: "DX",
+      cat: "系统工具",
+      catKey: "system",
+      tagline: "DirectX 运行库缺失修复，报错先跑它。",
+      version: "4.3",
+      size: "—",
+      platform: "Windows",
+      download: "https://www.microsoft.com/zh-cn/download/details.aspx?id=35",
+      site: "https://www.microsoft.com/zh-cn/download/details.aspx?id=35",
+      pick: false
+    },
+    {
+      name: "Cloudflare WARP",
+      mark: "WF",
+      cat: "安全隐私",
+      catKey: "security",
+      tagline: "免费的加密 DNS 与网络加速，装上就生效。",
+      version: "2025",
+      size: "—",
+      platform: "全平台",
+      download: "https://1.1.1.1/",
+      site: "https://1.1.1.1/",
+      pick: false
+    },
+    {
+      name: "Steam",
+      mark: "Stm",
+      cat: "游戏加速",
+      catKey: "game",
+      tagline: "最大的 PC 游戏平台，库和创意工坊都在这。",
+      version: "在线",
+      size: "在线",
+      platform: "全平台",
+      download: "https://store.steampowered.com/about/",
+      site: "https://store.steampowered.com/",
+      pick: false
+    },
+    {
+      name: "Epic Games",
+      mark: "Epi",
+      cat: "游戏加速",
+      catKey: "game",
+      tagline: "每周送免费游戏的商店，虚幻引擎同门。",
+      version: "在线",
+      size: "在线",
+      platform: "全平台",
+      download: "https://store.epicgames.com/download",
+      site: "https://store.epicgames.com/",
+      pick: false
+    },
+    {
+      name: "Nexus Mods",
+      mark: "Nx",
+      cat: "游戏加速",
+      catKey: "game",
+      tagline: "MOD 资源与管理器，装机必装的改造站。",
+      version: "在线",
+      size: "在线",
+      platform: "Windows",
+      download: "https://www.nexusmods.com/",
+      site: "https://www.nexusmods.com/",
+      pick: false
+    },
+    {
+      name: "Oopz",
+      mark: "Opz",
+      cat: "游戏加速",
+      catKey: "game",
+      tagline: "开黑语音，频道式管理，比传统语音轻。",
+      version: "在线",
+      size: "在线",
+      platform: "全平台",
+      download: "https://oopz.cn/",
+      site: "https://oopz.cn/",
+      pick: false
+    },
+    {
+      name: "OpenSpeedy",
+      mark: "OSp",
+      cat: "游戏加速",
+      catKey: "game",
+      tagline: "游戏变速工具，单机和模拟器都能调。",
+      version: "1.0",
+      size: "—",
+      platform: "Windows",
+      download: "https://store.steampowered.com/app/5010920/OpenSpeedy/",
+      site: "https://github.com/OpenSpeedy/OpenSpeedy",
+      pick: false
+    },
+    {
+      name: "HypoMux",
+      mark: "HM",
+      cat: "游戏加速",
+      catKey: "game",
+      tagline: "线路优化型加速器，游戏和应用都能用。",
+      version: "最新",
+      size: "—",
+      platform: "Windows",
+      download: "https://hypomux.com/",
+      site: "https://hypomux.com/",
+      pick: false
+    },
+    {
+      name: "外星仔加速器",
+      mark: "外",
+      cat: "游戏加速",
+      catKey: "game",
+      tagline: "主打主机与联机游戏的加速器。",
+      version: "最新",
+      size: "—",
+      platform: "Windows",
+      download: "https://www.bing.com/search?q=%E5%A4%96%E6%98%9F%E4%BB%94%E5%8A%A0%E9%80%9F%E5%99%A8+%E5%AE%98%E7%BD%91",
+      site: "https://www.bing.com/search?q=%E5%A4%96%E6%98%9F%E4%BB%94%E5%8A%A0%E9%80%9F%E5%99%A8+%E5%AE%98%E7%BD%91",
+      pick: false
+    },
+    {
+      name: "UU加速器",
+      mark: "UU",
+      cat: "游戏加速",
+      catKey: "game",
+      tagline: "网易出品，主机和 PC 游戏都支持。",
+      version: "最新",
+      size: "—",
+      platform: "全平台",
+      download: "https://uu.163.com/",
+      site: "https://uu.163.com/",
+      pick: true
+    },
+    {
+      name: "雷神加速器",
+      mark: "雷",
+      cat: "游戏加速",
+      catKey: "game",
+      tagline: "老牌加速器，按小时计费很灵活。",
+      version: "最新",
+      size: "—",
+      platform: "全平台",
+      download: "https://www.leigod.com/",
+      site: "https://www.leigod.com/",
+      pick: false
+    },
+    {
+      name: "奇游加速器",
+      mark: "奇",
+      cat: "游戏加速",
+      catKey: "game",
+      tagline: "电竞向加速，节点覆盖广。",
+      version: "最新",
+      size: "—",
+      platform: "全平台",
+      download: "https://www.qiyou.cn/",
+      site: "https://www.qiyou.cn/",
+      pick: false
+    },
+    {
+      name: "biubiu加速器",
+      mark: "biu",
+      cat: "游戏加速",
+      catKey: "game",
+      tagline: "手机和 PC 都能用，免费时长给得多。",
+      version: "最新",
+      size: "—",
+      platform: "全平台",
+      download: "https://www.biubiu001.com/",
+      site: "https://www.biubiu001.com/",
+      pick: false
+    },
+    {
+      name: "迅游加速器",
+      mark: "迅",
+      cat: "游戏加速",
+      catKey: "game",
+      tagline: "国内最早一批游戏加速器。",
+      version: "最新",
+      size: "—",
+      platform: "全平台",
+      download: "https://www.xunyou.com/",
+      site: "https://www.xunyou.com/",
+      pick: false
+    },
+    {
+      name: "轻蜂加速器",
+      mark: "轻",
+      cat: "游戏加速",
+      catKey: "game",
+      tagline: "轻量客户端，主打低占用。",
+      version: "最新",
+      size: "—",
+      platform: "Windows",
+      download: "https://qfacc.cn/",
+      site: "https://qfacc.cn/",
+      pick: false
+    },
+    {
+      name: "AK加速器",
+      mark: "AK",
+      cat: "游戏加速",
+      catKey: "game",
+      tagline: "免费时长友好，支持多平台。",
+      version: "最新",
+      size: "—",
+      platform: "Windows",
+      download: "https://ak.akspeedy.com/",
+      site: "https://ak.akspeedy.com/",
+      pick: false
+    },
+    {
+      name: "移动加速器",
+      mark: "移",
+      cat: "游戏加速",
+      catKey: "game",
+      tagline: "中国移动出品，宽带用户可以直接试。",
+      version: "最新",
+      size: "—",
+      platform: "Windows",
+      download: "https://aifast.komect.com/",
+      site: "https://aifast.komect.com/",
+      pick: false
+    },
+    {
+      name: "奇妙加速器",
+      mark: "妙",
+      cat: "游戏加速",
+      catKey: "game",
+      tagline: "新晋加速器，价格便宜。",
+      version: "最新",
+      size: "—",
+      platform: "Windows",
+      download: "https://jiasu.qimiao.com/",
+      site: "https://jiasu.qimiao.com/",
+      pick: false
+    },
+    {
+      name: "蒲公英联机版",
+      mark: "蒲",
+      cat: "游戏加速",
+      catKey: "game",
+      tagline: "异地组网联机，和朋友开一局。",
+      version: "最新",
+      size: "—",
+      platform: "Windows",
+      download: "https://pgy.oray.com/",
+      site: "https://pgy.oray.com/",
+      pick: false
+    },
+    {
+      name: "外星仔联机助手",
+      mark: "联",
+      cat: "游戏加速",
+      catKey: "game",
+      tagline: "和外星仔加速器配套的联机工具。",
+      version: "最新",
+      size: "—",
+      platform: "Windows",
+      download: "https://lianji.et001.com/",
+      site: "https://lianji.et001.com/",
+      pick: false
+    },
+    {
+      name: "Watt Toolkit",
+      mark: "WT",
+      cat: "游戏加速",
+      catKey: "game",
+      tagline: "原名 Steam++，社区加速与工具箱。",
+      version: "3.0",
+      size: "—",
+      platform: "全平台",
+      download: "https://steampp.net/",
+      site: "https://steampp.net/",
+      pick: false
     }
   ];
 
@@ -267,6 +748,14 @@
     return String(value).replace(/"/g, "&quot;");
   }
 
+  function metaSpans(item) {
+    const version = /^[\d.]/.test(item.version) ? `v${item.version}` : item.version;
+    return [version, item.size, item.platform]
+      .filter((value) => value && value !== "—")
+      .map((value) => `<span>${value}</span>`)
+      .join("<i></i>");
+  }
+
   function cardHTML(item, index) {
     return `
       <article class="card" style="--i:${index}">
@@ -279,11 +768,7 @@
           ${item.pick ? '<span class="pick" title="编辑精选" aria-label="编辑精选"></span>' : ""}
         </h3>
         <p class="card-desc">${item.tagline}</p>
-        <div class="card-meta">
-          <span>v${item.version}</span><i></i>
-          <span>${item.size}</span><i></i>
-          <span>${item.platform}</span>
-        </div>
+        <div class="card-meta">${metaSpans(item)}</div>
         <div class="card-actions">
           <a class="btn-dl" href="${escapeAttr(item.download)}" target="_blank" rel="noopener noreferrer"
              aria-label="下载 ${item.name}（前往官方网站）">下载 ${ICON_DOWNLOAD}</a>
@@ -431,6 +916,9 @@
   /* ---------- 其它 ---------- */
   const totalEl = document.getElementById("statTotal");
   if (totalEl) totalEl.textContent = String(SOFTWARE.length);
+
+  const moduleCountEl = document.querySelector("#tab-software .tab-meta");
+  if (moduleCountEl) moduleCountEl.textContent = String(SOFTWARE.length);
 
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
