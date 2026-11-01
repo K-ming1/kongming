@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://k-ming1.github.io/kongming/sitemap.xml
