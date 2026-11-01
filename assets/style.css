@@ -1,6 +1,6 @@
 /* =========================================================
-   空冥 · KONGMING
-   一个安静的软件库 — 样式表
+   PureLand · 净土
+   世界上最后一方净土 — 样式表
    设计原则：纸感底色、发丝线、留白、一个克制的墨绿重音
    ========================================================= */
 
@@ -180,6 +180,7 @@ button {
   font-size: 17px;
   font-weight: 600;
   letter-spacing: 0.06em;
+  white-space: nowrap;
 }
 
 .brand-latin {
@@ -200,6 +201,7 @@ button {
 .main-nav a {
   position: relative;
   padding: 4px 0;
+  white-space: nowrap;
   transition: color 0.25s var(--ease);
 }
 
@@ -254,9 +256,9 @@ button {
   padding: clamp(56px, 8vw, 96px) 0 clamp(44px, 6vw, 68px);
 }
 
-/* 背景里的一个淡淡的「空」字 */
+/* 背景里的一个淡淡的「净」字 */
 .hero::after {
-  content: "空";
+  content: "净";
   position: absolute;
   right: -0.06em;
   top: 0.1em;
@@ -978,10 +980,15 @@ button {
 @media (max-width: 640px) {
   .header-inner {
     height: 60px;
+    gap: 16px;
+  }
+
+  .brand-name {
+    font-size: 15.5px;
   }
 
   .main-nav {
-    gap: 18px;
+    gap: 14px;
     font-size: 12.5px;
   }
 
